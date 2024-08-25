@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Christos Bandis' Portfolio. I 'm a Web Developer, a Digital Forensics Analyst and a Blockchain Enthusiast. Let’s get in touch!">
+        <meta name="keywords" content="Κατασκευή Ιστοσελίδας, Προγραμματιστής, Ανάπτυξη Εφαρμογών, Ψηφιακή Εγκληματολογία, Αναλυτής Ψηφιακής Εγκληματολογίας, Κυβερνοασφάλεια, Web Developer, Web Design, Website, Developer, Designer, HTML, CSS, Javascript, Wordpress, Software Developer, Application Developer, Mobile Apps, Digital Forensics, Digital Forensics Analyst, Autopsy, Cyber Security, Cyber Crime, Blockchain, Smart Contracts, Solidity, Master's Degree Graduate">
+        <meta name="author" content="Christos Bandis">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- EmailJS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!-- SweetAlert2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script> 
+        <!-- AnimateCSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <!-- Less -->
+        <link rel="stylesheet/less" type="text/css" href="../css/styles.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Christos Bandis</title>
+    </head>
+    <body>
+        <main>
+            <!-- Header -->
+            <header class="header">
+                <a href="#" class="logo"><img id="logo" src="../img/logo.png" alt="Site Logo" srcset=""></a>
+
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+                <nav class="navbar">
+                    <a href="#about">About me</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact me</a>
+                    <div class="lang-menu">
+                        <div class="selected-lang">
+                            🇬🇧 Engilsh
+                        </div>
+                        <ul>
+                            <li id="lanOpt">
+                                <a href="#" class="lan" id="lanOpt2">🇬🇷 Ελληνικά</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Home Section -->
+            <div class="waves-container">  
+                <!--Content before waves-->            
+                <section class="home" id="home">
+                    <div class="home-content">
+                        <h3>Hello,</h3>
+                        <h1>I'm Christos</h1>
+                        <h3>I'm <span class="multi-text"></span></h3>
+                        <p>“Talk is cheap. Show me the code.” - Linus Torvalds</p>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/chbandis/" class="fa-brands fa-linkedin-in" aria-label="My Linkedin Profile"></a>
+                            <a href="https://github.com/chbandis" class="fa-brands fa-github" aria-label="My Github Profile"></a>
+                        </div>
+                        <a href="../uploads/CHRISTOS_BANDIS_CV_EN.pdf" download class="btn cvDown" aria-label="Download my CV">Download CV</a>
+                    </div>
+                    <div class="home-img">
+                        <img src="../img/profilepic.png" alt="Photo of Christos Bandis">
+                    </div>
+                </section>                              
+                <!-- Waves Start-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#F6F5F5" />
+                    </g>
+                    </svg>
+                </div>
+                <!--Waves end-->            
+            </div> 
+
+            <!-- About Section -->
+            <section class="about" id="about">
+                <div class="about-img">
+                    <img src="../img/aboutpic.jpg" alt="Photo of Christos Bandis">
+                </div>
+                <div class="about-content">
+                    <h2 class="heading">About <span>me</span></h2>
+                    <p>I have graduated with distinction from both "Computer Science" (BSc) and "Information Security and Digital Forensics" (MSc) programmes of the University of East London. I am equipped with a strong academic background and passion for web/application development and cybercrime investigation, aiming to contribute to an organization's mission to safeguard digital assets and maintain the integrity and security of its digital systems.</p>
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th>Name: </th>
+                                    <td>Christos Bandis</td>
+                                </tr>
+                                <tr>
+                                    <th>Age: </th>
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <th>Nationality: </th>
+                                    <td>Greek</td>
+                                </tr>
+                                <tr>
+                                    <th>Phone: </th>
+                                    <td>+30 6973979235</td>
+                                </tr>
+                                <tr>
+                                    <th>Email: </th>
+                                    <td>chr.bandis@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <th>Languages: </th>
+                                    <td>Greek, English</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline Section-->
+            <section class="timeline" id="timeline">
+                <div class="timeline-content">
+                    <h2 class="heading">Education and Work <span>Experience</span></h2>
+                    <ul class="timeline-list">
+                        <!-- Item 1 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag" id="marginFlagM">University of East London</span>
+                                    <span class="time-wrapper"><span class="time" id="marginTimeM">2022 - 2023</span></span>
+                                </div>
+                                <div class="desc">
+                                    <b style="font-size: 1.7rem;">MSc Information Security and Digital Forensics</b>
+                                    </br></br>
+                                    <b>Thesis:</b> Research on the synergy of private Blockchains and Chain of Custody applications in digital forensics: Development of private Ethereum Blockchain and Chain of Custody application
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <!-- Item 2 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper" id="item2">
+                                    <span class="hexa"></span>
+                                    <span class="flag" id="marginFlagB">University of East London</span>
+                                    <span class="time-wrapper"><span class="time" id="marginTimeB">2020 - 2022</span></span>
+                                </div>
+                                <div class="desc">
+                                    <b style="font-size: 1.7rem;">BSc (Hons) Computer Science</b>
+                                    </br></br>
+                                    <b>Thesis:</b> Authentication using Blockchain technology
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">Simply Fine</span>
+                                    <span class="time-wrapper"><span class="time" id="marginTimeS">2020</span></span>
+                                </div>
+                                <div class="desc">
+                                    <b style="font-size: 1.7rem;">Web Developer (Internship)</b>
+                                    </br></br>
+                                    Internship (6 months). Responsibilities included web development and project management. Additional tasks: SEO management, content creation.
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Item 4 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper" id="item4">
+                                    <span class="hexa"></span>
+                                    <span class="flag">VTI AKMI</span>
+                                    <span class="time-wrapper"><span class="time" id="marginTimeA">2015 - 2017</span></span>
+                                </div>
+                                <div class="desc">
+                                    <b style="font-size: 1.7rem;">Information Technology Application Technician</b>
+                                    </br></br>
+                                    Technical training in computer science with emphasis on the design and development of applications, websites and video games, database management and error detection and troubleshooting.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services" id="services">
+                <div class="services-content">
+                    <h2 class="heading">Services</h2>
+                    <div class="services-list">
+                        <div class="services-item">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Web Development</h3>
+                            <p>I specialize in developing custom web solutions, with personalized, customizable websites to meet your needs, from interactive user interfaces to powerful backend systems. Let's develop a unique digital experience that stands out and resonates with your audience.</p>
+                        </div>
+                        <div class="services-item">
+                            <i class="fa-brands fa-wordpress-simple"></i>
+                            <h3>Wordpress</h3>
+                            <p>Bring your ideas to life with a dynamic and customizable WordPress site. From unique themes and plugins to strategic SEO improvements, I provide solutions that make your website stand out. Regardless of the type — Blog, Eshop or business website — I deliver customized solutions that elevate your online presence.</p>
+                        </div>
+                        <div class="services-item">
+                            <i class="fa-brands fa-ethereum"></i>
+                            <h3>Blockchain Application Development (Web3)</h3>
+                            <p>Harness the potential of Web3 with advanced blockchain solutions tailored to your needs. From creating decentralized applications (dApps) to drafting secure smart contracts, I develop systems that follow your vision, enhancing the transparency, security and innovation of your business.</p>
+                        </div>
+                        <div class="services-item">
+                            <i class="fa-solid fa-fingerprint"></i>
+                            <h3>Digital Forensics Investigation</h3>
+                            <p>Discover hidden digital evidence with specialized digital forensics services.  I have specialized in investigating cyber incidents, analyzing data breaches, and retrieving critical information to support your case. With a meticulous approach and using cutting-edge techniques, I provide clear, actionable findings to effectively address your cyber challenges.</p>
+                        </div>
+                        <div class="services-item">
+                            <i class="fa-solid fa-file-shield"></i>
+                            <h3>Cyber Security Solutions</h3>
+                            <p>Protect your digital infrastructure with comprehensive cybersecurity solutions. I focus on identifying vulnerabilities, strengthening defences and ensuring data protection. From network security to implementing advanced security protocols, I help protect your business from evolving cyberthreats.</p>
+                        </div>
+                        <div class="services-item">
+                            <i class="fa-solid fa-desktop"></i>
+                            <h3>Software Development</h3>
+                            <p>Transform your vision with customized software solutions. I specialize in developing custom solutions  that meet your unique requirements, combining seamless user experiences with reliable functionality. Let's create software that promotes efficiency and innovation in your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+        
+            <!-- Skills and Tools Section -->
+            <section class="skills" id="skills">
+                <h2 class="heading">Skills <span>&</span> Tools</h2>
+                <div class="skills-content">     
+                    <div id="infinite" class="highway-slider">
+                        <div class="container highway-barrier">
+                            <ul class="highway-lane">                        
+                                <li class="highway-car htmlImgContainer">
+                                    <img src="../img/skillsTools/html.png" alt="HTML Logo">
+                                    <div class="overlay">HTML</div>
+                                </li>
+                                <li class="highway-car cssImgContainer">
+                                    <img src="../img/skillsTools/css.png" alt="CSS Logo">
+                                    <div class="overlay">CSS</div>
+                                </li>
+                                <li class="highway-car jsImgContainer">
+                                    <img src="../img/skillsTools/js.png" alt="Javascript Logo">
+                                    <div class="overlay">Javascript</div>
+                                </li>
+                                <li class="highway-car phpImgContainer">
+                                    <img src="../img/skillsTools/php.png" alt="PHP Logo">
+                                    <div class="overlay">PHP</div>
+                                </li>
+                                <li class="highway-car mysqlImgContainer">
+                                    <img src="../img/skillsTools/mysql.png" alt="MySQL Logo">
+                                    <div class="overlay">MySQL</div>
+                                </li>
+                                <li class="highway-car wordpressImgContainer">
+                                    <img src="../img/skillsTools/wordpress.png" alt="Wordpress Logo">
+                                    <div class="overlay">Wordpress</div>
+                                </li>                
+                                <li class="highway-car solidityImgContainer">
+                                    <img src="../img/skillsTools/solidity.png" alt="Solidity Logo">
+                                    <div class="overlay">Solidity</div>
+                                </li>
+                                <li class="highway-car javaImgContainer">
+                                    <img src="../img/skillsTools/java.png" alt="Java Logo">
+                                    <div class="overlay">Java</div>
+                                </li>
+                                <li class="highway-car csharpImgContainer">
+                                    <img src="../img/skillsTools/c-sharp.png" alt="C Sharp Logo">
+                                    <div class="overlay">C#</div>
+                                </li>
+                                <li class="highway-car autopsyImgContainer">
+                                    <img src="../img/skillsTools/autopsy.png" alt="Autopsy Logo">
+                                    <div class="overlay">Autopsy</div>
+                                </li>
+                                <li class="highway-car kaliImgContainer">
+                                    <img src="../img/skillsTools/kali-linux.png" alt="Kali Linux Logo">
+                                    <div class="overlay">Kali Linux</div>
+                                </li>
+                                <li class="highway-car photoshopImgContainer">
+                                    <img src="../img/skillsTools/photoshop.png" alt="Photoshop Logo">
+                                    <div class="overlay">Photoshop</div>
+                                </li>
+
+                                <li class="highway-car htmlImgContainer">
+                                    <img src="../img/skillsTools/html.png" alt="HTML Logo">
+                                    <div class="overlay">HTML</div>
+                                </li>
+                                <li class="highway-car cssImgContainer">
+                                    <img src="../img/skillsTools/css.png" alt="CSS Logo">
+                                    <div class="overlay">CSS</div>
+                                </li>
+                                <li class="highway-car jsImgContainer">
+                                    <img src="../img/skillsTools/js.png" alt="Javascript Logo">
+                                    <div class="overlay">Javascript</div>
+                                </li>
+                                <li class="highway-car phpImgContainer">
+                                    <img src="../img/skillsTools/php.png" alt="PHP Logo">
+                                    <div class="overlay">PHP</div>
+                                </li>
+                                <li class="highway-car mysqlImgContainer">
+                                    <img src="../img/skillsTools/mysql.png" alt="MySQL Logo">
+                                    <div class="overlay">MySQL</div>
+                                </li>
+                                <li class="highway-car wordpressImgContainer">
+                                    <img src="../img/skillsTools/wordpress.png" alt="Wordpress Logo">
+                                    <div class="overlay">Wordpress</div>
+                                </li>                
+                                <li class="highway-car solidityImgContainer">
+                                    <img src="../img/skillsTools/solidity.png" alt="Solidity Logo">
+                                    <div class="overlay">Solidity</div>
+                                </li>
+                                <li class="highway-car javaImgContainer">
+                                    <img src="../img/skillsTools/java.png" alt="Java Logo">
+                                    <div class="overlay">Java</div>
+                                </li>
+                                <li class="highway-car csharpImgContainer">
+                                    <img src="../img/skillsTools/c-sharp.png" alt="C Sharp Logo">
+                                    <div class="overlay">C#</div>
+                                </li>
+                                <li class="highway-car autopsyImgContainer">
+                                    <img src="../img/skillsTools/autopsy.png" alt="Autopsy Logo">
+                                    <div class="overlay">Autopsy</div>
+                                </li>
+                                <li class="highway-car kaliImgContainer">
+                                    <img src="../img/skillsTools/kali-linux.png" alt="Kali Linux Logo">
+                                    <div class="overlay">Kali Linux</div>
+                                </li>
+                                <li class="highway-car photoshopImgContainer">
+                                    <img src="../img/skillsTools/photoshop.png" alt="Photoshop Logo">
+                                    <div class="overlay">Photoshop</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>               
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects" id="projects">
+                <h2 class="heading">Projects</h2>
+                <div class="projects-content">
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/eurotechniki/eurotechnikiHomepage.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">Eurotechniki - Wooden Frames Factory</h3>
+                            <p>Website development for wooden frames factory</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>Development of a website for the presentation of company's profile and projects for a wooden frames factory.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>September 2023</span></li>
+                                    <li>Technologies used - <span>Html, CSS</span></li>
+                                    <li>Tag(s) - <span>Frontend</span></li>
+                                    <li>View online - <span><a href="https://eurotechniki.gr" target="_blank" aria-label="Project's link">Website</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->
+
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/themisapp/themisAppHomepage.png" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">ThemisApp & ThemisChain</h3>
+                            <p>Digital Forensics Chain of Custody (CoC) Application based on an Ethereum Private Blockchain</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>"Themis" is an evidence management system, based on a native private Ethereum blockchain. This solution aims to enhance the control and supervision of chain of custody of evidence in the context of digital forensics, offering features such as transparency, immutability and verifiability.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>August 2023</span></li>
+                                    <li>Technologies used - <span>Html, CSS, Javascript, Solidity, Geth, AWS</span></li>
+                                    <li>Tag(s) - <span>Frontend, Backend</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/ThemisApp_ThemisChain-Digital_Forensics_ChainofCustody_App_based_on_an_Ethereum_Private_Blockchain" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->
+
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/iden/idenHomepage.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">IDEN (Identification Eden)</h3>
+                            <p>Authentication App using Blockchain technology</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>IDEN is an authentication system that leverages blockchain technology. It was developed on the Ethereum Blockchain and takes advantage of any features that come with it. It has three roles, Issuer, Citizen and Verifier, and benefits from smart contracts to perform its functions.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>May 2022</span></li>
+                                    <li>Technologies used - <span>Html, CSS, Javascript, Solidity</span></li>
+                                    <li>Tag(s) - <span>Frontend, Backend</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/IDEN-Authentication_App_Using_Blockchain_Technology" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->
+
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/bhealthy/bhealthyHome.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">BHealthy - Hospital Management System</h3>
+                            <p>Hospital Management System</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>The purpose of this project is to develop a hospital data management system. This system enables the user to manage information about doctors, patients, their illnesses, their appointments, and treatment per appointment.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>June 2021</span></li>
+                                    <li>Technologies used - <span>Java, JavaFX</span></li>
+                                    <li>Tag(s) - <span>Frontend, Backend</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/BHealthy-Hospital_Management_System_Using_JavaFx" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->      
+
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/phpflix/phpflixHomepage.png" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">PHPFlix - Cinema Ticket Booking System</h3>
+                            <p>Cinema Ticket Booking System</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>The aim of this project is to create a fully functional online cinema ticket booking system. The purpose of the application is to provide the user with the ability to easily navigate its environment, in order to complete as easily as possible the action for which he visited the specific application in the first place.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>May 2021</span></li>
+                                    <li>Technologies used - <span>Html, CSS, PHP</span></li>
+                                    <li>Tag(s) - <span>Frontend, Backend</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/PHPFlix-Cinema_Ticket_Booking_System" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->           
+
+                    <!-- Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/digital_forensics.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">Greg Schardt - Digital Forensics Case Study</h3>
+                            <p>Digital Forensics Case Study</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>Analysis of the digital forensics case of Greg Schardt, in collaboration with <a href="https://www.linkedin.com/in/athanasios-manios/" target="_blank" aria-label="Colleague's Linkedin Profile">Manios Athanasios</a>, using the Autopsy tool.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>May 2023</span></li>
+                                    <li>Technologies used - <span>Autopsy</span></li>
+                                    <li>Tag(s) - <span>Case Study Analysis, Digital Forensics Investigation</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/Greg_Schardt_Case-Digital_Forensics_Case_Study-Greek?tab=readme-ov-file" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->         
+
+                    <!-- Load More Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/warehouseManagement/warehouseManagementAppStoryboard.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">Warehouse Management Android App</h3>
+                            <p>Warehouse Management Android App</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>The system developed for the needs of this project is classified in the type "Autonomous Warehouse Management Systems", as the main feature of this type is its simplicity in terms of management features. More specifically, the purpose of the application is to manage a food warehouse, which monitors the processes of receiving and sending packages.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>May 2022</span></li>
+                                    <li>Technologies used - <span>Java, Html, PHP</span></li>
+                                    <li>Tag(s) - <span>Frontend, Backend</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/Warehouse_Management_Android_App" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->             
+
+                    <!-- Load More Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/risk_assessment.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">Risk Assessment & Security Plan Implementation</h3>
+                            <p>Complete security plan proposal for a diagnostic center</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>The purpose of this project is to present a comprehensive security plan proposal for a diagnostic center that processes sensitive and non-sensitive personal data.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>January 2023</span></li>
+                                    <li>Tag(s) - <span>Presentation, Proposal</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/Presentation_of_Risk_Assessment_methodologies_and_symbolic_implementation_of_a_security_plan_Greek" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->        
+
+                    <!-- Load More Item Start -->
+                    <div class="pr-item">
+                        <img src="../img/projects/app_modeling.jpg" alt="Project's Screenshot">
+                        <div class="pr-item-layer">
+                            <h3 class="pr-item-title">e-Learning Android App</h3>
+                            <p>Android App Modeling and Design</p>
+                            <button class="btn view-project-btn">View Project</button>
+                        </div>
+                        <div class="pr-item-details">
+                            <div class="description">
+                                <p>The app will provide students with the ability to register for free and attend an unlimited number of courses, as well as include an assessment option, through which students will face challenges to monitor their level of knowledge.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Created - <span>May 2022</span></li>
+                                    <li>Tag(s) - <span>Modeling, Design, Proposal</span></li>
+                                    <li>View online - <span><a href="https://github.com/chbandis/e-Learning_Android_App_Modeling-Design_Greek" target="_blank" aria-label="Project's link">Github Repository</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End-->         
+                </div>
+                <button class="btn show-more-btn">View more projects</button>
+            </section>
+
+            <!-- Contact Section  -->
+            <section class="contact" id="contact">
+                <div class="contact-content">
+                    <div class="row">
+                        <div class="contact-left">          <!-- Empty characters to fix the heading padding -->
+                            <h2 class="heading">Contact <span>me</span>         </h2>
+                            <p><i class="fa-solid fa-paper-plane"></i> chr.bandis@gmail.com</p>
+                            <p><i class="fa-solid fa-phone-volume"></i> +30 6973979235</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/chbandis/" class="fa-brands fa-linkedin-in" aria-label="My Linkedin Profile"></a>
+                                <a href="https://github.com/chbandis" class="fa-brands fa-github" aria-label="My Github Profile"></a>
+                            </div>
+                            <a href="../uploads/CHRISTOS_BANDIS_CV_EN.pdf" download class="btn" aria-label="Download my CV">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form id="contact-form" onsubmit="sendMail(); return false;"> 
+                                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                                <textarea name="message" rows="6" id="message" placeholder="Message"></textarea>
+                                <button class="btn" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section  -->
+        <section class="footer" id="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Christos Bandis | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </section>
+
+        <!-- Project Popup -->
+        <div class="project-popup">
+            <div class="pp-inner">
+                <div class="pp-content">
+                    <div class="pp-header">
+                        <button class="btn pp-close"><i class="fa-solid fa-xmark"></i></button>
+                        <div class="pp-thumbnail">
+                            <img src="../img/projects/placeholder.png" alt="project's thumbnail">
+                        </div>
+                        <h3></h3>
+                    </div>
+                    <div class="pp-body"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <!-- Typed JS -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- EmailJS-->
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "LE3_h0PE9DQ-_eds2",
+                });
+            })();
+        </script>
+        <!-- Language -->
+        <script src="../js/lang.js"></script>
+        <!-- Main JS -->
+        <script src="../js/main.js"></script>
+
+        <script>
+           $(window).on("scroll", function() {
+                if($(window).scrollTop() > 80) {
+                    $(".header").addClass("header-active");
+                    $(".navbar a").css("color", "#3BB4C1");
+                    $(".selected-lang").css("color", "#3BB4C1");
+                    $("#menu-icon").css("color", "#3BB4C1");
+                    $(".navbar a").mouseenter(
+                        function() { 
+                            $(this).css("color", "#686D76");
+                        }).mouseleave(function() {
+                            $(this).css("color", "#3BB4C1"); });
+                    $(".selected-lang").mouseenter(
+                        function() { 
+                            $(this).css("color", "#686D76");
+                        }).mouseleave(function() {
+                            $(this).css("color", "#3BB4C1"); });
+                } else {
+                    //remove the background property so it comes transparent again (defined in css)
+                    $(".header").removeClass("header-active");
+                    $("#menu-icon").css("color", "#686D76");
+                    $(".navbar a").mouseenter(
+                        function() { 
+                            $(this).css("color", "#686D76");
+                        }).mouseleave(function() {
+                            $(this).css("color", "#ffffff"); });
+                            $(".navbar a").css("color", "#ffffff");                            
+                            if (parseInt($(window).width()) < 991) {   
+                                $(".navbar a").css("color", "#686D76");
+                                $(".navbar a").mouseenter(
+                                    function() { 
+                                        $(this).css("color", "#3BB4C1");
+                                    }).mouseleave(function() {
+                                        $(this).css("color", "#686D76"); });
+                            }
+                    $(".selected-lang").mouseenter(
+                        function() { 
+                            $(this).css("color", "#686D76");
+                        }).mouseleave(function() {
+                            $(this).css("color", "#ffffff"); });
+                            $(".selected-lang").css("color", "#ffffff");                            
+                            if (parseInt($(window).width()) < 991) {   
+                                $(".selected-lang").css("color", "#686D76");
+                                $(".selected-lang").mouseenter(
+                                    function() { 
+                                        $(this).css("color", "#3BB4C1");
+                                    }).mouseleave(function() {
+                                        $(this).css("color", "#686D76"); });
+                            }
+                }
+            });
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() < 400) {
+                    $(".footer-iconTop").css("display", "none");
+                } else {
+                    $(".footer-iconTop").css("display", "inline-flex");
+                }
+            });       
+        </script>
+    </body>
+</html>
