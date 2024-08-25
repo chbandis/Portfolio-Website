@@ -12,11 +12,11 @@ Welcome to my portfolio website repository. This project showcases my work, skil
 This portfolio website serves as a personal brand platform where I present my resume, professional background and projects. It is fully responsive and optimized for various devices, ensuring an optimal viewing experience for all users.
 
 ## Features
--Education and Work Experience: A section dedicated to my professional experience and educational background.
--Projects Showcase: A dedicated section to display my completed projects with links to their respective repositories.
--Contact Form: A functional contact form that allows visitors to reach out to me directly.
--Adaptive Layout: The website is fully responsive, adapting to different screen sizes.
--Smooth Animations: Subtle animations that enhance the user experience.
+- **Education and Work Experience**: A section dedicated to my professional experience and educational background.
+- **Projects Showcase**: A dedicated section to display my completed projects with links to their respective repositories.
+- **Contact Form**: A functional contact form that allows visitors to reach out to me directly.
+- **Adaptive Layout**: The website is fully responsive, adapting to different screen sizes.
+- **Smooth Animations**: Subtle animations that enhance the user experience.
 
 ## Live Preview
 You can visit my portfolio website [here](https://chrbandis.gr).
